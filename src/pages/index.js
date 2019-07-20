@@ -253,7 +253,7 @@ const IndexPage = () => (
             </a>
           </li> */}
           <li>
-            <a href="/projects" className="button fit">
+            <a href="https://github.com/WeizhenW" className="button fit">
               See More
             </a>
           </li>
