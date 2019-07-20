@@ -108,7 +108,7 @@ const IndexPage = () => (
       {/* section for job cracker */}
       <section className="spotlight">
         <div className="image">
-          <img src={jobTracker} alt="" />
+          <a href='https://job-cracker.herokuapp.com/' target="_blank"><img src={jobTracker} alt="" /></a>
         </div>
         <div className="content">
           <h2>
@@ -124,7 +124,9 @@ const IndexPage = () => (
       {/* section for movie master */}
       <section className="spotlight">
         <div className="image">
-          <img src={movieMaster} alt="" />
+          <a href='https://movie-master-2019.herokuapp.com/#/' target="_blank">
+            <img src={movieMaster} alt="" />
+          </a>        
         </div>
         <div className="content">
           <h2>
@@ -140,7 +142,9 @@ const IndexPage = () => (
       {/* Student feedback form section */}
       <section className="spotlight">
         <div className="image">
-          <img src={feedbackForm} alt="" />
+          <a href="https://student-feedback-form.herokuapp.com/#/" target="_blank">
+            <img src={feedbackForm} alt="" />
+          </a>
         </div>
         <div className="content">
           <h2>
@@ -156,7 +160,9 @@ const IndexPage = () => (
 
       <section className="spotlight">
         <div className="image">
-          <img src={toDo} alt="" />
+          <a href="https://to-do-wz.herokuapp.com/" target="_blank">
+            <img src={toDo} alt="" />
+          </a>
         </div>
         <div className="content">
           <h2>
@@ -234,21 +240,21 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
+          <h2>Discover more of my work</h2>
+          {/* <p>
             Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
             eleifend fringilla.
-          </p>
+          </p> */}
         </header>
         <ul className="actions stacked">
-          <li>
+          {/* <li>
             <a href="/#" className="button fit primary">
               Activate
             </a>
-          </li>
+          </li> */}
           <li>
-            <a href="/#" className="button fit">
-              Learn More
+            <a href="/projects" className="button fit">
+              See More
             </a>
           </li>
         </ul>
