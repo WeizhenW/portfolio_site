@@ -40,7 +40,7 @@ Edit `config.js` to put up your details
 
 ```javascript
 module.exports = {
-  siteTitle: 'Gatsby Starter spectral', // <title>
+  siteTitle: 'Weizhen Wang', // <title>
   ...
   heading: 'Anubhav',
   subHeading: 'Web Developer',

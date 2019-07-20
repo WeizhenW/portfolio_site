@@ -4,15 +4,16 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import movieMaster from '../assets/images/movie-master.png';
+import jobTracker from '../assets/images/job-tracker.png';
+import feedbackForm from '../assets/images/feedback-form.png';
+import toDo from '../assets/images/to-do.png';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <h2>{config.heading}</h2>
+        <h1>{config.heading}</h1>
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
@@ -30,7 +31,7 @@ const IndexPage = () => (
         </a>
       </Scroll>
     </section>
-
+    {/* below start self intro */}
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
@@ -45,8 +46,8 @@ const IndexPage = () => (
           Active Explorer and Learner | Perseverant Problem Solver | Technology Lover. 
           </p>
         </header>
-        <ul className="icons major">
-          <li>
+        {/* <ul className="icons major"> */}
+          {/* <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
             </span>
@@ -60,20 +61,54 @@ const IndexPage = () => (
             <span className="icon solid fa-code major style3">
               <span className="label">Dolor</span>
             </span>
-          </li>
-        </ul>
+          </li> */} 
+        {/* </ul> */}
+
+        <ul className="icons major">
+        {config.socialLinks.map(social => {
+          const { style, icon, name, url } = social;
+          return (
+            <li key={url}>
+              <a href={url} className={`icon major ${style} ${icon}`}>
+                <span className="label">{name}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       </div>
     </section>
-    <section id="work" className="wrapper style4">
-      {/* <h2>PORTFOLIO</h2> */}
-      <h3>Projects I have built</h3>
+
+    <section id="skillTitle" className="wrapper style3">
+      <h3>Professional Skills</h3>
+      <div id="skills">
+        <div id="skillName">
+          <p>Web Technology</p>
+          <br />
+          <p>Languages</p>
+          <p>Database</p>
+          <p>Tools</p>
+          <p>Project Management</p>
+        </div>
+        <div>
+          <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask HTML, CSS, Material-UI, Bootstrap</p>
+          <p>JavaScript, Python</p>
+          <p>PostgreSQL</p>
+          <p>MS Visual Studio Code, Git, Amazon Web Services (AWS)</p>
+          <p>PRINCE2 Practitioner</p>
+        </div>
+      </div>
     </section>
 
-    {/* section for job cracker */}
+    <section id="mywork" className="wrapper alt style4">
+      <h2 id="workTitle">My Portfolio</h2>
+    </section>
+
     <section id="two" className="wrapper alt style2">
+      {/* section for job cracker */}
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={jobTracker} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -89,7 +124,7 @@ const IndexPage = () => (
       {/* section for movie master */}
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img src={movieMaster} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -105,7 +140,7 @@ const IndexPage = () => (
       {/* Student feedback form section */}
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img src={feedbackForm} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -118,9 +153,26 @@ const IndexPage = () => (
           </p>
         </div>
       </section>
+
+      <section className="spotlight">
+        <div className="image">
+          <img src={toDo} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            To Do List
+            <br />
+          </h2>
+          <p>
+            jQuery app to track the to-dos. Functionalities include add/delete tasks, mark tasks as completed, show overdue tasks and sort the list.
+          </p>
+        </div>
+      </section>
     </section>
 
-    <section id="three" className="wrapper style3 special">
+
+
+    {/* <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
           <h2>Accumsan mus tortor nunc aliquet</h2>
@@ -177,7 +229,7 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
     <section id="cta" className="wrapper style4">
       <div className="inner">

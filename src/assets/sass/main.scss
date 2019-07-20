@@ -310,10 +310,12 @@
 	}
 
 /* Section/Article */
-
+	// section for self into
 	section, article {
 		&.special {
 			text-align: center;
+			width: 80%;
+			margin: 0 auto;
 		}
 	}
 
@@ -1588,13 +1590,13 @@
 		position: relative;
 		text-align: center;
 
-		h2 {
+		h1 {
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 2em;
 			opacity: 1;
-			padding: 0.35em 1em;
+			padding: 0.5em 1em;
 			position: relative;
 			z-index: 1;
 
@@ -1771,10 +1773,32 @@
 
 	// my work title
 
-	#work {
+	#workTitle {
 		text-align: center;
 		font-size: 24px;
-		// padding: 30px;
+		padding: 30px;
+	}
+
+	//skills section
+	#skillTitle {
+		text-align: center;
+		font-size: 24px;
+		margin: 50px auto;
+		padding: 20px;
+		width: 80%;
+	}
+
+	#skills {
+		width: 70%;
+		margin: 10px auto;
+		font-size: 20px;
+		text-align: left;
+		display: grid;
+		grid-template-columns: 30% 70%;
+	}
+
+	#skillName {
+		font-weight: 800;
 	}
 
 /* Main */
@@ -1938,4 +1962,9 @@
 				background-color: darken(_palette(bg), 8);
 			}
 		}
+	}
+
+	#two {
+		margin: 0px auto;
+		width: 80%;
 	}
