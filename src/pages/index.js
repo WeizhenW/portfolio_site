@@ -1,14 +1,16 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
-
 import movieMaster from '../assets/images/movie-master.png';
 import jobTracker from '../assets/images/job-tracker.png';
 import feedbackForm from '../assets/images/feedback-form.png';
 import toDo from '../assets/images/to-do.png';
 import config from '../../config';
+
+//material ui
+import Grid from '@material-ui/core/Grid';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -79,25 +81,40 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="skillTitle" className="wrapper style3">
-      <h3>Professional Skills</h3>
-      <div id="skills">
-        <div id="skillName">
+    <section id="skills" className="wrapper style3">
+      <h3 id="skillHeader">Professional Skills</h3>
+      <Grid container spacing={0} id="skillList">
+        <Grid item xs={12} sm={4} id="skillName">
           <p>Web Technology</p>
-          <br />
-          <p>Languages</p>
-          <p>Database</p>
-          <p>Tools</p>
-          <p>Project Management</p>
-        </div>
-        <div>
+        </Grid>
+        <Grid item xs={12} sm={8}>
           <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask HTML, CSS, Material-UI, Bootstrap</p>
+        </Grid>
+        <Grid item xs={12} sm={4} id="skillName">
+          <p>Languages</p>
+        </Grid>
+        <Grid item xs={12} sm={8}>
           <p>JavaScript, Python</p>
+        </Grid>
+        <Grid item xs={12} sm={4} id="skillName">
+          <p>Database</p>
+        </Grid>
+        <Grid item xs={12} sm={8}>
           <p>PostgreSQL</p>
-          <p>MS Visual Studio Code, Git, Amazon Web Services (AWS)</p>
+        </Grid>
+        <Grid item xs={12} sm={4} id="skillName">
+          <p>Tools</p>
+        </Grid>
+        <Grid item xs={12} sm={8}>
+          <p>JEST, MS Visual Studio Code, Git, Amazon Web Services (AWS)</p>
+        </Grid>
+        <Grid item xs={12} sm={4} id="skillName">
+          <p>Project Management</p>
+        </Grid>
+        <Grid item xs={12} sm={8}>
           <p>PRINCE2 Practitioner</p>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </section>
 
     <section id="mywork" className="wrapper alt style4">
