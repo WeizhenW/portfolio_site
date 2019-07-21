@@ -1971,8 +1971,45 @@
 	}
 
 	// images for the portfolio showcase
-	.image {
+	.oneImage {
 		border: 1px solid grey;
 		border-radius: 5px;
 		box-shadow: 3px 4px 10px -5px grey;
+		opacity: 1;
+  		display: block;
+  		height: auto;
+  		transition: .5s ease;
+		backface-visibility: hidden;
 	}
+
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 40%;
+		left: 35%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	  }
+	  
+	  .image:hover .oneImage {
+		opacity: 0.3;
+	  }
+	  
+	  .image:hover .middle {
+		opacity: 1;
+	  }
+	  
+	  .text {
+		color: white;
+		font-size: 14px;
+		margin: 10px;
+	  }
+
+	  .techUsed {
+		  background-color: #00b7a8;
+		  padding: 5px 10px;
+		  margin: 10px; 
+		  opacity: 0.7;
+	  }

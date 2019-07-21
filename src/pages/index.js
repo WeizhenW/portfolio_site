@@ -125,7 +125,21 @@ const IndexPage = () => (
       {/* section for job cracker */}
       <section className="spotlight">
         <div className="image">
-          <a href='https://job-cracker.herokuapp.com/' target="_blank"><img src={jobTracker} alt="" /></a>
+          <a href='https://job-cracker.herokuapp.com/' target="_blank">
+            <img src={jobTracker} alt="" className="oneImage" />
+            <div className="middle">
+              <Grid container className="text">
+                <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Redux</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Saga</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Express</p></Grid>
+                <Grid item xs={4}><p className="techUsed">PostgreSQL</p></Grid>
+                <Grid item xs={6}><p className="techUsed">Material-UI</p></Grid>
+                <Grid item xs={6}><p className="techUsed">AWS S3</p></Grid>
+              </Grid>
+            </div>
+          </a>
         </div>
         <div className="content">
           <h2>
@@ -142,7 +156,18 @@ const IndexPage = () => (
       <section className="spotlight">
         <div className="image">
           <a href='https://movie-master-2019.herokuapp.com/#/' target="_blank">
-            <img src={movieMaster} alt="" />
+            <img src={movieMaster} alt="" class="oneImage"/>
+            <div className="middle">
+              <Grid container className="text">
+                <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Redux</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Saga</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Express</p></Grid>
+                <Grid item xs={4}><p className="techUsed">PostgreSQL</p></Grid>
+                <Grid item xs={12}><p className="techUsed">Material-UI</p></Grid>
+              </Grid>
+            </div>
           </a>        
         </div>
         <div className="content">
@@ -160,7 +185,16 @@ const IndexPage = () => (
       <section className="spotlight">
         <div className="image">
           <a href="https://student-feedback-form.herokuapp.com/#/" target="_blank">
-            <img src={feedbackForm} alt="" />
+            <img src={feedbackForm} alt="feedback form" className="oneImage" />
+            <div className="middle">
+              <Grid container className="text">
+                <Grid item xs={6}><p className="techUsed">ReactJS</p></Grid>
+                <Grid item xs={6}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={6}><p className="techUsed">Express</p></Grid>
+                <Grid item xs={6}><p className="techUsed">PostgreSQL</p></Grid>
+                <Grid item xs={12}><p className="techUsed">Material-UI</p></Grid>
+              </Grid>
+            </div>
           </a>
         </div>
         <div className="content">
