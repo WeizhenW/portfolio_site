@@ -5,7 +5,6 @@ import Scroll from '../components/Scroll';
 import movieMaster from '../assets/images/movie-master.png';
 import jobTracker from '../assets/images/job-tracker.png';
 import feedbackForm from '../assets/images/feedback-form.png';
-import toDo from '../assets/images/to-do.png';
 import config from '../../config';
 
 //material ui
@@ -208,23 +207,6 @@ const IndexPage = () => (
           </p>
         </div>
       </section>
-
-      {/* <section className="spotlight">
-        <div className="image">
-          <a href="https://to-do-wz.herokuapp.com/" target="_blank">
-            <img src={toDo} alt="" />
-          </a>
-        </div>
-        <div className="content">
-          <h2>
-            To Do List
-            <br />
-          </h2>
-          <p>
-            jQuery app to track the to-dos. Functionalities include add/delete tasks, mark tasks as completed, show overdue tasks and sort the list.
-          </p>
-        </div>
-      </section> */}
     </section>
 
 
@@ -304,7 +286,7 @@ const IndexPage = () => (
             </a>
           </li> */}
           <li>
-            <a href="https://github.com/WeizhenW" className="button fit">
+            <a href="/Projects" className="button fit">
               See More
             </a>
           </li>
