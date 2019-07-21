@@ -118,7 +118,7 @@ const IndexPage = () => (
     </section>
 
     <section id="mywork" className="wrapper alt style4">
-      <h2 id="workTitle">My Portfolio</h2>
+      <h2 id="workTitle">My Portfolio Work</h2>
     </section>
 
     <section id="two" className="wrapper alt style2">
@@ -133,8 +133,8 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-          Centralizes the job application related information at a single place 
-          and helps job seekers easily track their application progress 
+          This app aims to help centralizing the job application related information at a single location 
+          and ease the application tracking progress for job seekers
           </p>
         </div>
       </section>
@@ -151,8 +151,8 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-            Movie database with full read/edit/search/delete functionalities and also provide the search possibility 
-            at OMDB by using open movie database API
+            This is a movie database app with full read/edit/search/delete functionalities and it also provides the search functionality 
+            at the public open movie database by using OMDB API
           </p>
         </div>
       </section>
@@ -169,13 +169,13 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-            A React based app that will ask user to input their daily feedback and submit.
-            There is also an admin view to check and manage the response dashboard.
+            This is a React based app where user can input their daily feedback and submit to admin.
+            It also has an admin view to check and manage the response dashboard.
           </p>
         </div>
       </section>
 
-      <section className="spotlight">
+      {/* <section className="spotlight">
         <div className="image">
           <a href="https://to-do-wz.herokuapp.com/" target="_blank">
             <img src={toDo} alt="" />
@@ -190,7 +190,7 @@ const IndexPage = () => (
             jQuery app to track the to-dos. Functionalities include add/delete tasks, mark tasks as completed, show overdue tasks and sort the list.
           </p>
         </div>
-      </section>
+      </section> */}
     </section>
 
 
