@@ -26,6 +26,8 @@ npm install
 gatsby develop
 ```
 
+Go to localhost:8000 to see the app.
+
 ### Personalization
 
 Edit `config.js` to put up your details
