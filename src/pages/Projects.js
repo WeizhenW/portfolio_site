@@ -6,6 +6,8 @@ import movieMaster from '../assets/images/movie-master.png';
 import toDo from '../assets/images/to-do.png';
 import jobTracker from '../assets/images/job-tracker.png';
 import feedbackForm from '../assets/images/feedback-form.png';
+import calculatorApp from '../assets/images/calculator.png';
+import galleryApp from '../assets/images/react-gallery.png';
 
 //material ui
 import Grid from '@material-ui/core/Grid';
@@ -17,7 +19,7 @@ import Button from '@material-ui/core/Button';
 
 const styles = {
     media: {
-        height: "350px",
+        height: "250px",
 		boxShadow: "3px 4px 10px -5px grey",
       },
 }
@@ -132,6 +134,60 @@ class IndexPage extends Component {
                                             <Button variant="outlined" color="primary">View Site</Button>
                                         </a>
                                         <a href="https://github.com/WeizhenW/Student-Feedback_Form" target="_blank">
+                                            <Button variant="outlined" color="secondary">View Code</Button>
+                                        </a>
+                                    </CardActions>
+                            </Card>
+                            </Grid>
+
+                            <Grid item xs={12} sm={6}>
+                                <Card>
+                                    <CardMedia className="image" >
+                                        <img src={galleryApp} alt="calculator" style={styles.media}/>
+                                    </CardMedia>
+                                    <CardContent className="content">
+                                        <h3>
+                                            My Photo Gallery
+                                        <br />
+                                        </h3>
+                                        <p>
+                                        This is a react based app showing my travel photos. 
+                                        User is able to add or delete a photo, love a photo, or click to flip the photo to see description.
+                                        Counter shows the number of people who loves each photo.
+                                        </p>
+                                </CardContent>
+                                <CardActions>
+                                        {/* <a href='https://student-feedback-form.herokuapp.com' target="_blank">
+                                            <Button variant="outlined" color="primary">View Site</Button>
+                                        </a> */}
+                                        <a href="https://github.com/WeizhenW/Photo-Gallery" target="_blank">
+                                            <Button variant="outlined" color="secondary">View Code</Button>
+                                        </a>
+                                    </CardActions>
+                            </Card>
+                            </Grid>
+
+
+                            <Grid item xs={12} sm={6}>
+                                <Card>
+                                    <CardMedia className="image" >
+                                        <img src={calculatorApp} alt="react gallery" style={styles.media}/>
+                                    </CardMedia>
+                                    <CardContent className="content">
+                                        <h3>
+                                            jQuery Calculator
+                                        <br />
+                                        </h3>
+                                        <p>
+                                        This is a calculator app built with jQuery as front end and node.js as backend. 
+                                        In base mode user can manually enter the numbers and operator for calculation, and advanced mode mimics the real calculator interface. 
+                                        </p>
+                                </CardContent>
+                                <CardActions>
+                                        {/* <a href='https://student-feedback-form.herokuapp.com' target="_blank">
+                                            <Button variant="outlined" color="primary">View Site</Button>
+                                        </a> */}
+                                        <a href="https://github.com/WeizhenW/Server-Side-Calculator" target="_blank">
                                             <Button variant="outlined" color="secondary">View Code</Button>
                                         </a>
                                     </CardActions>
