@@ -6,6 +6,7 @@ import movieMaster from '../assets/images/movie-master.png';
 import jobTracker from '../assets/images/job-tracker.png';
 import feedbackForm from '../assets/images/feedback-form.png';
 import config from '../../config';
+import resume from '../assets/images/Resume_WeizhenWang.pdf'
 
 //material ui
 import Grid from '@material-ui/core/Grid';
@@ -130,10 +131,10 @@ const IndexPage = () => (
               <Grid container className="text">
                 <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
                 <Grid item xs={4}><p className="techUsed">Redux</p></Grid>
-                <Grid item xs={4}><p className="techUsed">Saga</p></Grid>
                 <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={1}></Grid>
                 <Grid item xs={4}><p className="techUsed">Express</p></Grid>
-                <Grid item xs={4}><p className="techUsed">PostgreSQL</p></Grid>
+                <Grid item xs={6}><p className="techUsed">PostgreSQL</p></Grid>
                 <Grid item xs={6}><p className="techUsed">Material-UI</p></Grid>
                 <Grid item xs={6}><p className="techUsed">AWS S3</p></Grid>
               </Grid>
@@ -160,11 +161,14 @@ const IndexPage = () => (
               <Grid container className="text">
                 <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
                 <Grid item xs={4}><p className="techUsed">Redux</p></Grid>
-                <Grid item xs={4}><p className="techUsed">Saga</p></Grid>
+                {/* <Grid item xs={4}><p className="techUsed">Saga</p></Grid> */}
                 <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={1}></Grid>
                 <Grid item xs={4}><p className="techUsed">Express</p></Grid>
-                <Grid item xs={4}><p className="techUsed">PostgreSQL</p></Grid>
-                <Grid item xs={12}><p className="techUsed">Material-UI</p></Grid>
+                <Grid item xs={6}><p className="techUsed">PostgreSQL</p></Grid>
+                <Grid item xs={1}></Grid>
+                <Grid item xs={2}></Grid>
+                <Grid item xs={8}><p className="techUsed">Material-UI</p></Grid>
               </Grid>
             </div>
           </a>        
@@ -187,11 +191,12 @@ const IndexPage = () => (
             <img src={feedbackForm} alt="feedback form" className="oneImage" />
             <div className="middle">
               <Grid container className="text">
-                <Grid item xs={6}><p className="techUsed">ReactJS</p></Grid>
-                <Grid item xs={6}><p className="techUsed">Node.js</p></Grid>
-                <Grid item xs={6}><p className="techUsed">Express</p></Grid>
+                {/* <Grid item xs={2}></Grid> */}
+                <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
+                <Grid item xs={4}><p className="techUsed">Express</p></Grid>
                 <Grid item xs={6}><p className="techUsed">PostgreSQL</p></Grid>
-                <Grid item xs={12}><p className="techUsed">Material-UI</p></Grid>
+                <Grid item xs={6}><p className="techUsed">Material-UI</p></Grid>
               </Grid>
             </div>
           </a>
@@ -273,22 +278,20 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Discover more of my work</h2>
-          {/* <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p> */}
+          <h2>Want to know more?</h2>
+          {/* <h2>
+            Or look at my resume
+          </h2> */}
         </header>
         <ul className="actions stacked">
-          {/* <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li> */}
+          
           <li>
-            <a href="/Projects" className="button fit primary">
-              See More
+            <a href="/Projects" className="button primary">
+              See Other Projects
             </a>
+          </li>
+          <li>
+            <a href={resume} className="button ">Download my Resume</a>
           </li>
         </ul>
       </div>
