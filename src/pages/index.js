@@ -117,7 +117,7 @@ const IndexPage = () => (
     </section>
 
     <section id="mywork" className="wrapper alt style4">
-      <h2 id="workTitle">My Portfolio Work</h2>
+      <h2 id="workTitle">Highlighted Projects</h2>
     </section>
 
     <section id="two" className="wrapper alt style2">
