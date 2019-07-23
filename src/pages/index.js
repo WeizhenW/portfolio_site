@@ -45,7 +45,7 @@ const IndexPage = () => (
           <br />
           International background and global mindset
           <br /> 
-          Active Explorer and Learner | Perseverant Problem Solver | Technology Lover. 
+          Active Explorer and Learner, Perseverant Problem Solver, Technology Lover. 
           </p>
         </header>
         {/* <ul className="icons major"> */}
@@ -88,7 +88,7 @@ const IndexPage = () => (
           <p>Web Technology</p>
         </Grid>
         <Grid item xs={12} sm={8}>
-          <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask HTML, CSS, Material-UI, Bootstrap</p>
+          <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask, HTML, CSS, Material-UI, Bootstrap</p>
         </Grid>
         <Grid item xs={12} sm={4} id="skillName">
           <p>Languages</p>
@@ -106,7 +106,7 @@ const IndexPage = () => (
           <p>Tools</p>
         </Grid>
         <Grid item xs={12} sm={8}>
-          <p>JEST, MS Visual Studio Code, Git, Amazon Web Services (AWS)</p>
+          <p>JEST, Visual Studio Code, Git, Amazon Web Services (AWS)</p>
         </Grid>
         <Grid item xs={12} sm={4} id="skillName">
           <p>Project Management</p>
@@ -147,7 +147,7 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-          This app aims to help centralizing the job application related information at a single location 
+          This app aims to help centralize the job application related information at a single location 
           and ease the application tracking progress for job seekers
           </p>
         </div>
