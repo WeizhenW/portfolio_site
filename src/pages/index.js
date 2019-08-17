@@ -88,7 +88,7 @@ const IndexPage = () => (
           <p>Web Technology</p>
         </Grid>
         <Grid item xs={12} sm={8}>
-          <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask, HTML, CSS, Material-UI, Bootstrap</p>
+          <p>ReactJS, React-Redux, Redux-Saga, jQuery, Node.js, Express, Flask, HTML, CSS, Material-UI, Bootstrap, Semantic-UI</p>
         </Grid>
         <Grid item xs={12} sm={4} id="skillName">
           <p>Languages</p>
