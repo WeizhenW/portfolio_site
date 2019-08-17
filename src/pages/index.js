@@ -132,11 +132,17 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-
+            Budge App
             <br />
           </h2>
           <p>
-            Budge is a mobile first web application that allows users to greatly reduce their wait time and make some extra money while dining out at restaurants. Users are able to search waitlists at local restaurants, join the waitlist when they are at the restaurant, and bid and purchase the spot from other users.
+            Budge is a mobile first web application that allows users to greatly reduce their wait time and make some extra money while dining out at restaurants. 
+            <br/>
+            <br/>
+            Users are able to search waitlists at local restaurants, join the waitlist when they are at the restaurant, and bid and purchase the spot from other users.
+            <br/>
+            <br/>
+            Technologies: React, Redux, Node.js, PostgreSQL, Semantic-UI, Google Map API, Twilio
           </p>
         </div>
       </section>

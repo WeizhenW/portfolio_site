@@ -18,7 +18,7 @@ export default function Footer() {
       <ul className="copyright">
         <li>&copy; Weizhen Wang</li>
         <li>
-          July 2019
+          August 2019
         </li>
       </ul>
     </footer>
