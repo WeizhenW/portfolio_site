@@ -6,7 +6,7 @@ import movieMaster from '../assets/images/movie-master.png';
 import jobTracker from '../assets/images/job-tracker.png';
 import feedbackForm from '../assets/images/feedback-form.png';
 import config from '../../config';
-import resume from '../assets/images/Resume_WeizhenWang.pdf'
+import resume from '../assets/images/Resume_WeizhenWang.pdf';
 
 //material ui
 import Grid from '@material-ui/core/Grid';
@@ -41,15 +41,15 @@ const IndexPage = () => (
             Hi, I am a full stack software engineer based in Minneapolis, MN.
           </h2>
           <p>
-          6 + years experience on large complex IT projects in financial industry 
+            6 + years experience on large complex IT projects in financial industry
           <br />
-          International background and global mindset
-          <br /> 
-          Active Explorer and Learner, Perseverant Problem Solver, Technology Lover. 
+            International background and global mindset
+          <br />
+            Active Explorer and Learner, Perseverant Problem Solver, Technology Lover.
           </p>
         </header>
         {/* <ul className="icons major"> */}
-          {/* <li>
+        {/* <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
             </span>
@@ -63,21 +63,21 @@ const IndexPage = () => (
             <span className="icon solid fa-code major style3">
               <span className="label">Dolor</span>
             </span>
-          </li> */} 
+          </li> */}
         {/* </ul> */}
 
         <ul className="icons major">
-        {config.socialLinks.map(social => {
-          const { style, icon, name, url } = social;
-          return (
-            <li key={url}>
-              <a href={url} className={`icon major ${style} ${icon}`}>
-                <span className="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+          {config.socialLinks.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon major ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
 
@@ -122,6 +122,25 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
+
+      {/* budge app */}
+      <section className="spotlight">
+        <div className="image" style={{textAlign: 'center', margin: '20px' }}>
+          <a href="https://budge-app-2019.herokuapp.com/#/" target="_blank">
+            <iframe src="https://giphy.com/embed/KFc2rzODRWqO2p1gRa" width="240" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </a>
+        </div>
+        <div className="content">
+          <h2>
+
+            <br />
+          </h2>
+          <p>
+            Budge is a mobile first web application that allows users to greatly reduce their wait time and make some extra money while dining out at restaurants. Users are able to search waitlists at local restaurants, join the waitlist when they are at the restaurant, and bid and purchase the spot from other users.
+          </p>
+        </div>
+      </section>
+
       {/* section for job cracker */}
       <section className="spotlight">
         <div className="image">
@@ -147,8 +166,8 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-          This app aims to help centralize the job application related information at a single location 
-          and ease the application tracking progress for job seekers
+            This app aims to help centralize the job application related information at a single location
+            and ease the application tracking progress for job seekers
           </p>
         </div>
       </section>
@@ -156,7 +175,7 @@ const IndexPage = () => (
       <section className="spotlight">
         <div className="image">
           <a href='https://movie-master-2019.herokuapp.com/#/' target="_blank">
-            <img src={movieMaster} alt="" class="oneImage"/>
+            <img src={movieMaster} alt="" class="oneImage" />
             <div className="middle">
               <Grid container className="text">
                 <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
@@ -171,7 +190,7 @@ const IndexPage = () => (
                 <Grid item xs={8}><p className="techUsed">Material-UI</p></Grid>
               </Grid>
             </div>
-          </a>        
+          </a>
         </div>
         <div className="content">
           <h2>
@@ -179,19 +198,18 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-            This is a movie database app with full read/edit/search/delete functionalities and it also provides the search functionality 
+            This is a movie database app with full read/edit/search/delete functionalities and it also provides the search functionality
             at the public open movie database by using OMDB API
           </p>
         </div>
       </section>
       {/* Student feedback form section */}
-      <section className="spotlight">
+      {/* <section className="spotlight">
         <div className="image">
           <a href="https://student-feedback-form.herokuapp.com/#/" target="_blank">
             <img src={feedbackForm} alt="feedback form" className="oneImage" />
             <div className="middle">
               <Grid container className="text">
-                {/* <Grid item xs={2}></Grid> */}
                 <Grid item xs={4}><p className="techUsed">ReactJS</p></Grid>
                 <Grid item xs={4}><p className="techUsed">Node.js</p></Grid>
                 <Grid item xs={4}><p className="techUsed">Express</p></Grid>
@@ -211,7 +229,8 @@ const IndexPage = () => (
             It also has an admin view to check and manage the response dashboard.
           </p>
         </div>
-      </section>
+      </section> */}
+
     </section>
 
 
@@ -284,7 +303,7 @@ const IndexPage = () => (
           </h2> */}
         </header>
         <ul className="actions stacked">
-          
+
           <li>
             <a href="/Projects" className="button primary">
               See Other Projects
